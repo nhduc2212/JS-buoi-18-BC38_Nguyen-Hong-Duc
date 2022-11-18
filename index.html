@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section class="body-container">
+      <header class="header">Playing around with numbers</header>
+      <!-- AREA FOR INPUTTING NUMBERS - BEGINNING -->
+      <div class="input-container">
+        <input
+          type="number"
+          id="input-num"
+          placeholder="please input your number"
+        />
+        <button class="btn-main" onclick="addValue()">Add number</button>
+        <button class="btn-main" onclick="removeValue()">Remove number</button>
+      </div>
+      <!-- //AREA FOR INPUTTING NUMBERS - ENDING -->
+      <!-- --------------------------------------------------- -->
+      <!-- AREA FOR DISPLAYING ARRAY'S VALUES - BEGINNING -->
+      <div class="number-array-display" id="number-array-display">
+        <p id="array-container"></p>
+      </div>
+      <!-- //AREA FOR DISPLAYING ARRAY'S VALUES - ENDING-->
+      <!-- --------------------------------------------------- -->
+      <!-- AREA FOR FUNCTIONAL BUTTONS - JS TOGGLE - BEGINNING -->
+      <div class="function-btns">
+        <button class="button-functional" id="button-1" onclick="sumPos()">
+          Sum of the positives
+        </button>
+        <button class="button-functional" id="button-2" onclick="countPos()">
+          Count the positive numbers
+        </button>
+        <button class="button-functional" id="button-3" onclick="smallNum()">
+          Find the smallest number
+        </button>
+        <button class="button-functional" id="button-4" onclick="smallPos()">
+          Find the smallest positive number
+        </button>
+        <button class="button-functional" id="button-5" onclick="lastEven()">
+          Find the last even number
+        </button>
+        <button class="button-functional" id="button-6" onclick="swapPlace()">
+          Switch position of 2 numbers
+        </button>
+        <button class="button-functional" id="button-7" onclick="sortArray()">
+          Sort in the ascending order
+        </button>
+        <button class="button-functional" id="button-8" onclick="firstPrime()">
+          Find the first prime number
+        </button>
+        <button class="button-functional" id="button-9" onclick="countInte()">
+          Count the number of integer
+        </button>
+        <button class="button-functional" id="button-10" onclick="countPosNeg()">
+          Compare the number of negative and positive numbers
+        </button>
+      </div>
+      <!-- //AREA FOR FUNCTIONAL BUTTONS - JS TOGGLE - ENDING -->
+      <!-- --------------------------------------------------- -->
+      <!-- AREA FOR DISPLAYING OUTPUTS - JS OUTCOME - BEGINNING -->
+      <div class="results-general-container">
+        <!-- Calculate Sum of the positives -->
+        <div class="result-container sum-pos">
+          <p id="sum-pos-result"></p>
+        </div>
+        <!-- //Calculate Sum of the positives -->
+
+        <!-- Count the positive numbers -->
+        <div class="result-container count-pos">
+          <p id="count-pos-result"></p>
+        </div>
+        <!-- //Count the positive numbers -->
+
+        <!-- Find the smallest number -->
+        <div class="result-container small-num">
+          <p id="small-num-result"></p>
+        </div>
+        <!-- //Find the smallest number -->
+
+        <!-- Find the smallest positive number -->
+        <div class="result-container small-pos">
+          <p id="small-pos-result"></p>
+        </div>
+        <!-- //Find the smallest positive number -->
+
+        <!-- Find the last even number -->
+        <div class="result-container last-even">
+<p id="last-even-result"></p>
+
+        </div>
+        <!-- //Find the last even number -->
+
+        <!-- Find the first prime number -->
+        <div class="result-container fisrt-prime">
+            <p id="first-prime-result"></p>
+        </div>
+        <!-- //Find the first prime number -->
+
+        <!-- Count the number of integer -->
+        <div class="result-container count-inte">
+          <p id="count-inte-result"></p>
+        </div>
+        <!-- //Count the number of integer -->
+
+        <!-- Compare number of negative and positive numbers -->
+        <div
+          class="result-container count-pos-neg"
+        >
+      <p id="count-pos-neg-result"></p></div>
+        <!-- //Compare number of negative and positive numbers -->
+      </div>
+      <!-- //AREA FOR DISPLAYING OUTPUTS - JS OUTCOME - ENDING -->
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
